@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net461</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\XDSDotNet\XDSDotNet.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="System.ServiceModel" Condition="'$(TargetFramework)' == 'net461'" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.CommandLineUtils" Version="1.1.1" />
+    </ItemGroup>
+
+</Project>
